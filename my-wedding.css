@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background: #fffbfb;
+}
+
+header {
+    padding-bottom: 32px;
+    border-bottom: solid 1px #d0c8cd;
+}
+
+.wedding-title {
+    font-family: "Italianno", cursive;
+    color: #494949;
+    font-style: italic;
+    font-weight: unset;
+    text-align: center;
+    margin: 22px 0 8px 0;
+    font-size: 28px;
+}
+
+.wedding-subtitle {
+    font-family: "gf_Roboto variant1", Tofu;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    color: #8f8a8d;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.wedding-title-icon {
+    /* color: #ffcaee; */
+    color: #ffd3f1;
+}
+
+.wedding-subtitle::after {
+    content: "";
+    display: block;
+    width: 34px;
+    height: 1px;
+    background-color: #d0c8cd;
+    margin-left: 14px;
+}
+
+.wedding-subtitle::before {
+    content: "";
+    display: block;
+    width: 34px;
+    height: 1px;
+    background-color: #d0c8cd;
+    margin-right: 14px;
+}
+
+.wedding-navbar {
+    padding: 16px;
+}
+
+.wedding-navbar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wedding-navbar-list li {
+    margin: 0 30px;
+}
+
+.wedding-navbar-list a {
+    text-decoration: none;
+    color: #494949;
+    font-family: "gf_Roboto variant1", Tofu;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.wedding-navbar-list a:hover {
+    color: #ffcaee;
+}
+
+.wedding-navbar-list a:after {
+    content: "";
+    height: 1px;
+    background-color: #ffcaee;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    width: 0;
+    transition: width 0.4s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.wedding-navbar-list a:hover:after {
+    width: 100%;
+}
+
+.swiper {
+    margin: 10px auto;
+    width: 1850px;
+    height: 720px;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.music-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    text-align: center;
+}
+.music-player audio {
+    width: 220px;
+}
+.music-controls {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.music-controls button {
+    background: #f5f5f5;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+#track-title {
+    flex: 1;
+    font-weight: bold;
+    margin: 0 8px;
+    font-size: 14px;
+}
+
+/* filepath: /Users/tuong/Workspace/my-wedding/my-wedding.css */
+.save-the-date-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    padding-top: 48px;
+    height: 800px;
+    background-image: url('./assets/images/16281553_rm119batch4-mynt-40-leavesframe.jpg');
+    background-size: cover;
+}
+.save-the-date-box {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 32px 24px;
+    min-width: 340px;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+.save-the-date-title {
+    font-family: 'Roboto', serif;
+    font-size: 2em;
+    margin-bottom: 8px;
+    color: #6d6d6d;
+}
+.save-the-date-names {
+    font-size: 1.3em;
+    color: #a67c52;
+    margin: 12px 0;
+}
+.save-the-date-message {
+    font-size: 1em;
+    color: #7a7a7a;
+    margin-bottom: 18px;
+}
+.save-the-date-btn {
+    background: #f40101;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 28px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(244,1,1,0.08);
+    transition: background 0.2s;
+}
+.save-the-date-btn:hover {
+    background: #c30000;
+}
+.save-the-date-calendar {
+    margin-bottom: 18px;
+}
+.calendar-header {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #a67c52;
+}
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 8px;
+}
+.calendar-table th, .calendar-table td {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    font-size: 1em;
+    color: #7a7a7a;
+    border-radius: 50%;
+}
+.calendar-active {
+    background: #e7b8b8;
+    color: #fff;
+    font-weight: bold;
+}
+.save-the-date-countdown {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    color: #a67c52;
+    margin-top: 12px;
+}
+.save-the-date-countdown span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.save-the-date-countdown strong {
+    font-size: 1.5em;
+    color: #a67c52;
+}
