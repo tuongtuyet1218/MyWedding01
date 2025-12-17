@@ -7,10 +7,14 @@
 
     <title>Our wedding Tuong&Tuyet</title>
     <!-- Google Fonts: Example using Roboto -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Custom CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="my-wedding.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -35,12 +39,15 @@
         });
     </script> -->
     <header>
-        <h1 class="wedding-title">
-            Văn Tưởng
-            <i class="fa-regular fa-heart fa-2xs fa-beat-fade wedding-title-icon"></i>
-            Diễm Tuyết
-        </h1>
-        <span class="wedding-subtitle">Just Married</span>
+        <span class="wedding-header">
+
+            <h1 class="wedding-title">
+                Văn Tưởng
+                <i class="fa-regular fa-heart fa-2xs fa-beat-fade wedding-title-icon"></i>
+                Diễm Tuyết
+            </h1>
+            <span class="wedding-subtitle">Just Married</span>
+        </span>
     </header>
 
     <body>
@@ -164,49 +171,121 @@
             });
         </script>
 
+        <section class="invitation-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-6">
+                        <div class="invitation-box left">
+                            <div class="left-vec"></div>
+                            <div class="right-vec"></div>
+                            <div class="inner">
+                                <h2>Save the date</h2>
+                            <span>For the wedding of</span>
+                            <h3>Văn Tưởng Diễm Tuyết</h3>
+                            <p>Lời chúc của bạn sẽ là món quà tinh thần tuyệt vời, làm ngày cưới của chúng tôi thêm ấm áp và hạnh phúc</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col col-md-6">
+                        <div class="invitation-box calendar-box">
+                            <h2>Save the date</h2>
+                            <span>For the wedding of</span>
+                            <h3>Văn Tưởng Diễm Tuyết</h3>
+                            <p>Lời chúc của bạn sẽ là món quà tinh thần tuyệt vời, làm ngày cưới của chúng tôi thêm ấm áp và hạnh phúc</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- ...existing code... -->
-<div class="save-the-date-section">
-    <div class="save-the-date-box">
-        <h2 class="save-the-date-title">Save the Date</h2>
-        <p class="save-the-date-subtitle">For the wedding of</p>
-        <h3 class="save-the-date-names">Văn Tưởng &amp; Diễm Tuyết</h3>
-        <p class="save-the-date-message">
-            Lời chúc của bạn sẽ là món quà tinh thần tuyệt vời, làm ngày cưới của chúng tôi thêm ấm áp và hạnh phúc
-        </p>
-        <button class="save-the-date-btn">
-            <i class="fa-solid fa-heart" style="color: #f40101;"></i> Gửi lời chúc &rarr;
-        </button>
-    </div>
-    <div class="save-the-date-box">
-        <div class="save-the-date-calendar">
-            <div class="calendar-header">May / 2026</div>
-            <table class="calendar-table">
-                <thead>
-                    <tr>
-                        <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-                    <tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr>
-                    <tr><td>14</td><td>15</td><td>16</td><td>17</td>
-                        <td class="calendar-active">18</td>
-                        <td>19</td><td>20</td>
-                    </tr>
-                    <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr>
-                    <tr><td>28</td><td>29</td><td>30</td><td></td><td></td><td></td><td></td></tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="save-the-date-countdown">
-            <span><strong id="days">400</strong> Ngày</span>
-            <span><strong id="hours">22</strong> Giờ</span>
-            <span><strong id="minutes">42</strong> Phút</span>
-            <span><strong id="seconds">57</strong> Giây</span>
-        </div>
-    </div>
-</div>
-<!-- ...existing code... -->
+        <!-- <div class="save-the-date-section">
+            <div class="save-the-date-box">
+                <h2 class="save-the-date-title">Save the Date</h2>
+                <p class="save-the-date-subtitle">For the wedding of</p>
+                <h3 class="save-the-date-names">Văn Tưởng &amp; Diễm Tuyết</h3>
+                <p class="save-the-date-message">
+                    Lời chúc của bạn sẽ là món quà tinh thần tuyệt vời, làm ngày cưới của chúng tôi thêm ấm áp và hạnh
+                    phúc
+                </p>
+                <button class="save-the-date-btn">
+                    <i class="fa-solid fa-heart" style="color: #f40101;"></i> Gửi lời chúc &rarr;
+                </button>
+            </div>
+            <div class="save-the-date-box">
+                <div class="save-the-date-calendar">
+                    <div class="calendar-header">May / 2026</div>
+                    <table class="calendar-table">
+                        <thead>
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td class="calendar-active">18</td>
+                                <td>19</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="save-the-date-countdown">
+                    <span><strong id="days">400</strong> Ngày</span>
+                    <span><strong id="hours">22</strong> Giờ</span>
+                    <span><strong id="minutes">42</strong> Phút</span>
+                    <span><strong id="seconds">57</strong> Giây</span>
+                </div>
+            </div>
+        </div> -->
+        <!-- ...existing code... -->
     </body>
     <footer>
         <!-- <p>&copy; 2025 Tuong & Tuyet's Wedding</p> -->

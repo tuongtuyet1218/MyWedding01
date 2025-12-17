@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -6,20 +7,23 @@
 body {
     background: #fffbfb;
 }
-
+h1, h2, h3, h4, h5, h6 {
+    color: #202a41;
+}
 header {
     padding-bottom: 32px;
     border-bottom: solid 1px #d0c8cd;
 }
 
 .wedding-title {
-    font-family: "Italianno", cursive;
-    color: #494949;
-    font-style: italic;
+    /* color: #494949; */
+    color: #202a41;
+    /* font-style: italic; */
     font-weight: unset;
     text-align: center;
     margin: 22px 0 8px 0;
-    font-size: 28px;
+    font-family: "Dancing Script", cursive;
+    font-size: 2.5rem;
 }
 
 .wedding-subtitle {
@@ -27,17 +31,19 @@ header {
     font-weight: 400;
     font-style: italic;
     text-align: center;
-    color: #8f8a8d;
+    /* color: #8f8a8d; */
+    color: #797979;
     font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
     letter-spacing: 2px;
+    position: relative; 
 }
 
 .wedding-title-icon {
-    /* color: #ffcaee; */
-    color: #ffd3f1;
+    color: #ffcaee;
+    /* color: #c89d9c;; */
 }
 
 .wedding-subtitle::after {
@@ -45,8 +51,15 @@ header {
     display: block;
     width: 34px;
     height: 1px;
-    background-color: #d0c8cd;
+    background: #ece9e9;
     margin-left: 14px;
+    /* content: "";
+    background: #ece9e9;
+    width: 35px;
+    height: 1px;
+    position: absolute;
+    right: -50px;
+    top: 9px; */
 }
 
 .wedding-subtitle::before {
@@ -54,7 +67,7 @@ header {
     display: block;
     width: 34px;
     height: 1px;
-    background-color: #d0c8cd;
+    background-color: #ece9e9;
     margin-right: 14px;
 }
 
@@ -252,4 +265,96 @@ header {
 .save-the-date-countdown strong {
     font-size: 1.5em;
     color: #a67c52;
+}
+
+
+
+
+.invitation-section {
+    display: block;
+    padding: 120px 0;
+        background: url('./assets/images//bg.png') !important;
+}
+
+.invitation-box {
+    background: #fff;
+    max-width: 580px;
+        height: 581px;
+    padding: 120px 70px;
+    -webkit-box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.invitation-box::before {
+    content: "";
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    border: 5px solid rgb(129 103 103 / 40%);
+}
+
+.left-vec {
+    background: url('./assets/images/invitation-left-img.png') center center / cover no-repeat local;
+    width: 220px;
+    height: 414px;
+    position: absolute;
+    left: -150px;
+    top: -100px;
+    z-index: -1;
+}
+
+.right-vec {
+    background: url('./assets/images/invitation-right-image.png') center center / cover no-repeat local;
+    width: 400px;
+    height: 508px;
+    position: absolute;
+    right: -120px;
+    bottom: -100px;
+    z-index: -1;
+}
+.right-vec {
+    display: none;
+}
+
+.inner {
+    position: relative;
+}
+.inner h2 {
+        font-family: "Great Vibes", cursive;
+    font-size: 50px;
+    font-size: 3.33333rem;
+    margin: 0 0 0.6em;
+}
+.inner span {
+    font-size: 16px;
+    font-size: 1.06667rem;
+    font-weight: 300;
+    color: #797979;
+}
+.inner h3 {
+  font-size: 32px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0.83em 0 1em;
+}
+.inner p {
+    font-size: 1.13333rem;
+    margin-bottom: 2em;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
 }
