@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
 
     <title>Our wedding Tuong&Tuyet</title>
-    <!-- Google Fonts: Example using Roboto -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/images/anh-messi-01.jpg"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <!-- Custom CSS -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="my-wedding.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.css"
+    />
 
+    <link rel="stylesheet" href="my-wedding.css" />
+  </head>
+  <!-- <body oncontextmenu="return false" onkeydown="if(event.keyCode==123||(event.ctrlKey&&event.shiftKey&&event.keyCode==73)){return false;}"> -->
 
-</head>
-<!-- <body oncontextmenu="return false" onkeydown="if(event.keyCode==123||(event.ctrlKey&&event.shiftKey&&event.keyCode==73)){return false;}"> -->
-
-<body>
+  <body>
     <!-- <script>
         // Disable right-click and some common inspect shortcuts
         document.addEventListener('contextmenu', event => event.preventDefault());
@@ -39,257 +62,781 @@
         });
     </script> -->
     <header>
-        <span class="wedding-header">
-
-            <h1 class="wedding-title">
-                Văn Tưởng
-                <i class="fa-regular fa-heart fa-2xs fa-beat-fade wedding-title-icon"></i>
-                Diễm Tuyết
-            </h1>
-            <span class="wedding-subtitle">Just Married</span>
-        </span>
+      <span class="wedding-header">
+        <h1 class="wedding-title">
+          Văn Tưởng
+          <i
+            class="fa-regular fa-heart fa-2xs fa-beat-fade wedding-title-icon"
+          ></i>
+          Diễm Tuyết
+        </h1>
+        <span class="wedding-subtitle">Just Married</span>
+      </span>
     </header>
 
     <body>
-        <nav class="wedding-navbar">
-            <ul class="wedding-navbar-list">
-                <li><a href="#home">Cặp đôi</a></li>
-                <li><a href="#about">Chuyện tình yêu</a></li>
-                <li><a href="#gallery">Album hình cưới</a></li>
-                <li><a href="#events">Sự kiện cưới</a></li>
-                <li><a href="#contact">Sổ lưu bút</a></li>
-                <li><a href="#contact">Mừng cưới</a></li>
-            </ul>
-        </nav>
-        <div>
-            <!-- Swiper -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./assets/images/anh-messi-01.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/images/anh-messi-02.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/images/anh-messi-03.jpg" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/images/anh-messi-04.webp" alt="">
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
+      <nav class="wedding-navbar">
+        <ul class="wedding-navbar-list">
+          <!-- <li><a href="#home">Cặp đôi</a></li> -->
+          <!-- <li><a href="#about">Chuyện tình yêu</a></li> -->
+          <li><a href="#events">Sự kiện cưới</a></li>
+          <li><a href="#gallery">Album hình cưới</a></li>
+          <!-- <li><a href="#contact">Sổ lưu bút</a></li> -->
+          <li><a href="#donate">Mừng cưới</a></li>
+        </ul>
+      </nav>
+      <div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/anh-messi-01.jpg" alt="" />
             </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/anh-messi-02.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/anh-messi-03.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/anh-messi-04.webp" alt="" />
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
-        <!-- ...existing code... -->
-        <div class="music-player">
-            <audio id="wedding-audio" autoplay></audio>
-            <span id="music-icon" style="font-size:2em;cursor:pointer;">
-                <i class="fa-solid fa-circle-play fa-spin" style="color: #f40101;"></i>
-            </span>
+      </div>
+      <div class="music-player">
+        <audio id="wedding-audio" autoplay></audio>
+        <span
+          id="music-icon"
+          class="music-icon"
+          style="font-size: 2em; cursor: pointer"
+        >
+          <i class="fa-solid fa-circle-play fa-spin" style="color: #f40101"></i>
+        </span>
+        <p class="music-play-warning">Bấm vào đây để phát/dừng nhạc</p>
+      </div>
+      <div>
+        <div class="snowflakes">
+          <div class="snowflake">
+            <img src="./assets/images/heart-drop-icon.png" width="25" />
+          </div>
+          <div class="snowflake">
+            <img src="./assets/images/heart-drop-icon.png" width="25" />
+          </div>
+          <div class="snowflake">
+            <img src="./assets/images/heart-drop-icon.png" width="25" />
+          </div>
+          <div class="snowflake">
+            <img src="./assets/images/heart-drop-icon.png" width="25" />
+          </div>
+          <div class="snowflake">
+            <img src="./assets/images/heart-drop-icon.png" width="25" />
+          </div>
+          <div class="snowflake">
+            <img src="./assets/images/heart-drop-icon.png" width="25" />
+          </div>
+          <div class="snowflake">
+            <img src="./assets/images/heart-drop-icon.png" width="25" />
+          </div>
+          <div class="snowflake">
+            <img src="./assets/images/heart-drop-icon.png" width="25" />
+          </div>
+          <div class="snowflake">
+            <img src="./assets/images/heart-drop-icon.png" width="25" />
+          </div>
+          <div class="snowflake">
+            <img src="./assets/images/heart-drop-icon.png" width="25" />
+          </div>
         </div>
-        <script>
-            // Playlist
-            const playlist = [
-                {
-                    title: "I Do",
-                    url: "./assets/music/i-do.mp3"
-                }
-            ];
-            let currentTrack = 0;
-            const audio = document.getElementById('wedding-audio');
-            const icon = document.getElementById('music-icon');
+      </div>
 
-            function loadTrack(index) {
-                audio.src = playlist[index].url;
-                audio.play();
-                updateIcon();
-            }
-
-            function nextTrack() {
-                currentTrack = (currentTrack + 1) % playlist.length;
-                loadTrack(currentTrack);
-            }
-
-            function updateIcon() {
-                if (audio.paused) {
-                    icon.innerHTML = '<i class="fa-solid fa-circle-play" style="color: #f40101;"></i>';
-                } else {
-                    icon.innerHTML = '<i class="fa-solid fa-circle-play fa-spin" style="color: #f40101;"></i>';
-                }
-            }
-
-            icon.addEventListener('click', () => {
-                if (audio.paused) {
-                    audio.play();
-                } else {
-                    audio.pause();
-                }
-                updateIcon();
-            });
-
-            audio.addEventListener('ended', nextTrack);
-            audio.addEventListener('play', updateIcon);
-            audio.addEventListener('pause', updateIcon);
-
-            window.addEventListener('DOMContentLoaded', () => {
-                loadTrack(currentTrack);
-            });
-        </script>
-        <!-- ...existing code... -->
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                // grabCursor: true,
-                effect: "creative",
-                autoplay: {
-                    delay: 5000, // 3 seconds delay between slides
-                    disableOnInteraction: false,
-                    waitForTransition: true // Ensures autoplay waits for transition after manual navigation
-                },
-                loop: true,
-                speed: 1500, // Adjusts the slider transition duration (in ms)
-                creativeEffect: {
-                    prev: {
-                        shadow: true,
-                        translate: [0, 0, -400],
-                    },
-                    next: {
-                        translate: ["100%", 0, 0],
-                    },
-                },
-                keyboard: {
-                    enabled: true,
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-            });
-        </script>
-
-        <section class="invitation-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-md-6">
-                        <div class="invitation-box left">
-                            <div class="left-vec"></div>
-                            <div class="right-vec"></div>
-                            <div class="inner">
-                                <h2>Save the date</h2>
-                            <span>For the wedding of</span>
-                            <h3>Văn Tưởng Diễm Tuyết</h3>
-                            <p>Lời chúc của bạn sẽ là món quà tinh thần tuyệt vời, làm ngày cưới của chúng tôi thêm ấm áp và hạnh phúc</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col col-md-6">
-                        <div class="invitation-box calendar-box">
-                            <h2>Save the date</h2>
-                            <span>For the wedding of</span>
-                            <h3>Văn Tưởng Diễm Tuyết</h3>
-                            <p>Lời chúc của bạn sẽ là món quà tinh thần tuyệt vời, làm ngày cưới của chúng tôi thêm ấm áp và hạnh phúc</p>
-                        </div>
-                    </div>
+      <section class="invitation-section">
+        <div class="container">
+          <div class="row">
+            <div class="col col-md-6">
+              <div class="invitation-box left">
+                <div class="left-vec"></div>
+                <div class="right-vec"></div>
+                <div class="inner">
+                  <h2>Save the date</h2>
+                  <span>For the wedding of</span>
+                  <h3>Văn Tưởng & Diễm Tuyết</h3>
+                  <p>
+                    Lời chúc của bạn sẽ là món quà tinh thần tuyệt vời, làm ngày
+                    cưới của chúng tôi thêm ấm áp và hạnh phúc
+                  </p>
                 </div>
+              </div>
             </div>
-        </section>
-
-        <!-- ...existing code... -->
-        <!-- <div class="save-the-date-section">
-            <div class="save-the-date-box">
-                <h2 class="save-the-date-title">Save the Date</h2>
-                <p class="save-the-date-subtitle">For the wedding of</p>
-                <h3 class="save-the-date-names">Văn Tưởng &amp; Diễm Tuyết</h3>
-                <p class="save-the-date-message">
-                    Lời chúc của bạn sẽ là món quà tinh thần tuyệt vời, làm ngày cưới của chúng tôi thêm ấm áp và hạnh
-                    phúc
-                </p>
-                <button class="save-the-date-btn">
-                    <i class="fa-solid fa-heart" style="color: #f40101;"></i> Gửi lời chúc &rarr;
-                </button>
-            </div>
-            <div class="save-the-date-box">
-                <div class="save-the-date-calendar">
-                    <div class="calendar-header">May / 2026</div>
-                    <table class="calendar-table">
-                        <thead>
-                            <tr>
-                                <th>Sun</th>
-                                <th>Mon</th>
-                                <th>Tue</th>
-                                <th>Wed</th>
-                                <th>Thu</th>
-                                <th>Fri</th>
-                                <th>Sat</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td></td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
-                                <td>11</td>
-                                <td>12</td>
-                                <td>13</td>
-                            </tr>
-                            <tr>
-                                <td>14</td>
-                                <td>15</td>
-                                <td>16</td>
-                                <td>17</td>
-                                <td class="calendar-active">18</td>
-                                <td>19</td>
-                                <td>20</td>
-                            </tr>
-                            <tr>
-                                <td>21</td>
-                                <td>22</td>
-                                <td>23</td>
-                                <td>24</td>
-                                <td>25</td>
-                                <td>26</td>
-                                <td>27</td>
-                            </tr>
-                            <tr>
-                                <td>28</td>
-                                <td>29</td>
-                                <td>30</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
+            <div class="col col-md-6">
+              <div class="invitation-box calendar-box">
+                <div class="left-vec"></div>
+                <div class="right-vec"></div>
+                <div class="inner">
+                  <div class="mini_calendar">
+                    <table>
+                      <caption class="calendar-month">
+                        April / 2026
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <th scope="col">Sun</th>
+                          <th scope="col">Mon</th>
+                          <th scope="col">Tue</th>
+                          <th scope="col">Wed</th>
+                          <th scope="col">Thu</th>
+                          <th scope="col">Fri</th>
+                          <th scope="col">Sat</th>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>2</td>
+                          <td>3</td>
+                          <td>4</td>
+                          <td>5</td>
+                          <td>6</td>
+                          <td>7</td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>9</td>
+                          <td>10</td>
+                          <td>11</td>
+                          <td>12</td>
+                          <td>13</td>
+                          <td>14</td>
+                        </tr>
+                        <tr>
+                          <td>15</td>
+                          <td>16</td>
+                          <td>17</td>
+                          <td>18</td>
+                          <td>19</td>
+                          <td>20</td>
+                          <td>21</td>
+                        </tr>
+                        <tr>
+                          <td>22</td>
+                          <td>23</td>
+                          <td>24</td>
+                          <td>25</td>
+                          <td>
+                            <div id="today">26</div>
+                          </td>
+                          <td>27</td>
+                          <td>28</td>
+                        </tr>
+                        <tr>
+                          <td>29</td>
+                          <td>30</td>
+                          <td id="emptydays" colspan="5"></td>
+                        </tr>
+                      </tbody>
                     </table>
+                  </div>
+                  <div class="count-down-clock">
+                    <div class="countdown">
+                      <div class="time-box">
+                        <div id="cd-days">0</div>
+                        <span>Ngày</span>
+                      </div>
+                      <div class="time-box">
+                        <div id="cd-hours">0</div>
+                        <span>Giờ</span>
+                      </div>
+                      <div class="time-box">
+                        <div id="cd-minutes">0</div>
+                        <span>Phút</span>
+                      </div>
+                      <div class="time-box">
+                        <div id="cd-seconds">0</div>
+                        <span>Giây</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="save-the-date-countdown">
-                    <span><strong id="days">400</strong> Ngày</span>
-                    <span><strong id="hours">22</strong> Giờ</span>
-                    <span><strong id="minutes">42</strong> Phút</span>
-                    <span><strong id="seconds">57</strong> Giây</span>
-                </div>
+              </div>
             </div>
-        </div> -->
-        <!-- ...existing code... -->
-    </body>
-    <footer>
-        <!-- <p>&copy; 2025 Tuong & Tuyet's Wedding</p> -->
-    </footer>
-</body>
+          </div>
+        </div>
+      </section>
+      <section class="gallery-section section-padding" id="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+              <div class="section-title">
+                <h2>Album hình cưới</h2>
+                <p>
+                  Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi
+                  yêu ai đó sâu sắc sẽ cho bạn dũng khí.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="pswp-gallery" id="my-gallery">
+              <div class="pswp-gallery__item">
+                <a
+                  href="./assets/images/anh-messi-04.webp"
+                  data-pswp-width="1200"
+                  data-pswp-height="800"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/images/anh-messi-04.webp"
+                    alt="Phong cảnh núi non"
+                  />
+                </a>
+                <div class="image-caption">Phong cảnh núi non</div>
+              </div>
+              <div class="pswp-gallery__item">
+                <a
+                  href="./assets/images/anh-messi-01.jpg"
+                  data-pswp-width="1200"
+                  data-pswp-height="800"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/images/anh-messi-01.jpg"
+                    alt="Phong cảnh núi non"
+                  />
+                </a>
+                <div class="image-caption">Phong cảnh núi non</div>
+              </div>
+              <div class="pswp-gallery__item">
+                <a
+                  href="./assets/images/anh-messi-02.jpg"
+                  data-pswp-width="1200"
+                  data-pswp-height="800"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/images/anh-messi-02.jpg"
+                    alt="Phong cảnh núi non"
+                  />
+                </a>
+                <div class="image-caption">Phong cảnh núi non</div>
+              </div>
+              <div class="pswp-gallery__item">
+                <a
+                  href="./assets/images/anh-messi-03.jpg"
+                  data-pswp-width="1200"
+                  data-pswp-height="800"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/images/anh-messi-03.jpg"
+                    alt="Phong cảnh núi non"
+                  />
+                </a>
+                <div class="image-caption">Phong cảnh núi non</div>
+              </div>
+            </div> -->
+          <div class="pswp-gallery" id="my-gallery">
+            <!-- Ảnh 1 -->
+            <div class="pswp-gallery__item gallery-item-1">
+              <a
+                href="https://picsum.photos/id/10/2500/1667"
+                data-pswp-width="2500"
+                data-pswp-height="1667"
+                target="_blank"
+              >
+                <img
+                  src="https://picsum.photos/id/10/600/800"
+                  alt="Phong cảnh núi non"
+                />
+              </a>
+            </div>
 
+            <!-- Ảnh 2 -->
+            <div class="pswp-gallery__item gallery-item-2">
+              <a
+                href="https://picsum.photos/id/20/3670/2462"
+                data-pswp-width="3670"
+                data-pswp-height="2462"
+                target="_blank"
+              >
+                <img
+                  src="https://picsum.photos/id/20/600/800"
+                  alt="Ly cà phê"
+                />
+              </a>
+            </div>
+
+            <!-- Ảnh 3 -->
+            <div class="pswp-gallery__item gallery-item-3">
+              <a
+                href="https://picsum.photos/id/30/1280/901"
+                data-pswp-width="1280"
+                data-pswp-height="901"
+                target="_blank"
+              >
+                <img
+                  src="https://picsum.photos/id/30/600/800"
+                  alt="Thuyền trên biển"
+                />
+              </a>
+            </div>
+
+            <!-- Ảnh 4 -->
+            <div class="pswp-gallery__item gallery-item-4">
+              <a
+                href="https://picsum.photos/id/40/4106/2806"
+                data-pswp-width="4106"
+                data-pswp-height="2806"
+                target="_blank"
+              >
+                <img src="https://picsum.photos/id/40/600/800" alt="Rừng cây" />
+              </a>
+            </div>
+
+            <!-- Ảnh 5 - Ẩn trên mobile -->
+            <div class="pswp-gallery__item gallery-item-5">
+              <a
+                href="https://picsum.photos/id/50/4608/3072"
+                data-pswp-width="4608"
+                data-pswp-height="3072"
+                target="_blank"
+              >
+                <img
+                  src="https://picsum.photos/id/50/600/800"
+                  alt="Bàn làm việc"
+                />
+              </a>
+            </div>
+
+            <!-- Ảnh 6 - Ẩn trên mobile -->
+            <div class="pswp-gallery__item gallery-item-6">
+              <a
+                href="https://picsum.photos/id/60/1920/1200"
+                data-pswp-width="1920"
+                data-pswp-height="1200"
+                target="_blank"
+              >
+                <img
+                  src="https://picsum.photos/id/60/600/900"
+                  alt="Mèo đáng yêu"
+                />
+              </a>
+            </div>
+
+            <!-- Ảnh 7 - Ẩn trên mobile -->
+            <div class="pswp-gallery__item gallery-item-7">
+              <a
+                href="https://picsum.photos/id/70/2560/1707"
+                data-pswp-width="2560"
+                data-pswp-height="1707"
+                target="_blank"
+              >
+                <img
+                  src="https://picsum.photos/id/70/600/900"
+                  alt="Thiết bị công nghệ"
+                />
+              </a>
+            </div>
+
+            <!-- Ảnh 8 - Ẩn trên mobile -->
+            <div class="pswp-gallery__item gallery-item-8">
+              <a
+                href="https://picsum.photos/id/80/3888/2592"
+                data-pswp-width="3888"
+                data-pswp-height="2592"
+                target="_blank"
+              >
+                <img
+                  src="https://picsum.photos/id/80/600/800"
+                  alt="Văn phòng phẩm"
+                />
+              </a>
+            </div>
+
+            <!-- Ảnh 9 - Ẩn trên mobile -->
+            <div class="pswp-gallery__item gallery-item-9">
+              <a
+                href="https://picsum.photos/id/90/5184/3456"
+                data-pswp-width="5184"
+                data-pswp-height="3456"
+                target="_blank"
+              >
+                <img
+                  src="https://picsum.photos/id/90/600/900"
+                  alt="Quả thông"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="event-section section-padding p-t-0 section-bg-color-2"
+        id="events"
+      >
+        <div
+          class="top-area"
+          style="
+            background: url('./assets/images/anh-messi-03.jpg') center
+              center/cover no-repeat local;
+          "
+        >
+          <h2>Sự Kiện Cưới</h2>
+          <p>
+            ...tình yêu không phải là chỉ nhìn vào mắt nhau, mà là cùng hướng về
+            một tương lai chung...
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col col-xs-12">
+              <div class="event-grids clearfix">
+                <div class="grid section-bg-img">
+                  <h3>TIỆC CƯỚI NHÀ NAM</h3>
+                  <div class="image-wrap">
+                    <img src="./assets/images/anh-messi-02.jpg" alt="" />
+                  </div>
+                  <p><strong>11:30 15/09/2024</strong></p>
+                  <p>
+                    <span>Phú Gia Xavia- </span>
+                    Đà Nẵng
+                  </p>
+                  <div class="calendar-button">
+                    <div class="atcb-initialized"></div>
+                  </div>
+                </div>
+                <div class="grid section-bg-img">
+                  <h3>TIỆC CƯỚI NHÀ NỮ</h3>
+                  <div class="image-wrap">
+                    <img src="./assets/images/anh-messi-02.jpg" alt="" />
+                  </div>
+                  <p><strong>11:30 15/09/2024</strong></p>
+                  <p>
+                    <span>Phú Gia Xavia- </span>
+                    Đà Nẵng
+                  </p>
+                  <div class="calendar-button">
+                    <div class="atcb-initialized"></div>
+                  </div>
+                </div>
+                <div class="grid section-bg-img">
+                  <h3>TIỆC CƯỚI NHÀ NAM</h3>
+                  <div class="image-wrap">
+                    <img src="./assets/images/anh-messi-02.jpg" alt="" />
+                  </div>
+                  <p><strong>11:30 15/09/2024</strong></p>
+                  <p>
+                    <span>Phú Gia Xavia- </span>
+                    Đà Nẵng
+                  </p>
+                  <div class="calendar-button">
+                    <div class="atcb-initialized"></div>
+                  </div>
+                </div>
+                <div class="grid section-bg-img">
+                  <h3>TIỆC CƯỚI NHÀ NAM</h3>
+                  <div class="image-wrap">
+                    <img src="./assets/images/anh-messi-02.jpg" alt="" />
+                  </div>
+                  <p><strong>11:30 15/09/2024</strong></p>
+                  <p>
+                    <span>Phú Gia Xavia- </span>
+                    Đà Nẵng
+                  </p>
+                  <div class="calendar-button">
+                    <div class="atcb-initialized"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="donate-section section-padding section-bg-color"
+        id="donate"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+              <div class="section-title">
+                <h2>Hộp mừng cưới</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-xs-12">
+              <div id="donate-modal">
+                <div class="donate-modal-content">
+                  <div class="donate-modal-body">
+                    <div class="donate-box">
+                      <div class="donate-card">
+                        <h3>Mừng cưới đến chú rể</h3>
+                        <img
+                          class="qr-code-image"
+                          src="./assets/images/anh-messi-02.jpg"
+                          alt=""
+                        />
+                        <p>
+                          "Ngân hàng: "
+                          <strong>Viettin Bank</strong>
+                        </p>
+                        <p>
+                          "Tên tài khoản: "
+                          <strong>ĐẶNG VĂN TƯỞNG</strong>
+                        </p>
+                        <p>
+                          "Số tài khoản: "
+                          <strong>123132312321</strong>
+                        </p>
+                        <p>
+                          "Chi nhánh: "
+                          <strong>Đà Nẵng</strong>
+                        </p>
+                      </div>
+                      <div class="donate-card">
+                        <h3>Mừng cưới đến cô dâu</h3>
+                        <img
+                          class="qr-code-image"
+                          src="./assets/images/anh-messi-02.jpg"
+                          alt=""
+                        />
+                        <p>
+                          "Ngân hàng: "
+                          <strong>Viettin Bank</strong>
+                        </p>
+                        <p>
+                          "Tên tài khoản: "
+                          <strong>PHÙNG THỊ DIỄM TUYẾT</strong>
+                        </p>
+                        <p>
+                          "Số tài khoản: "
+                          <strong>123132312321</strong>
+                        </p>
+                        <p>
+                          "Chi nhánh: "
+                          <strong>Đà Nẵng</strong>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row"></div>
+        </div>
+      </section>
+    </body>
+    <footer class="site-footer footer-style-1">
+      <div class="inner">
+        <div class="couple-pic">
+          <img src="./assets/images/anh-messi-04.webp" alt="" />
+        </div>
+        <h2>Thank you!</h2>
+      </div>
+
+      <!-- <p>&copy; 2025 Tuong & Tuyet's Wedding</p> -->
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      // Playlist
+      const playlist = [
+        {
+          title: "I Do",
+          url: "./assets/music/i-do.mp3",
+        },
+      ];
+      let currentTrack = 0;
+      const audio = document.getElementById("wedding-audio");
+      const icon = document.getElementById("music-icon");
+
+      function loadTrack(index) {
+        audio.src = playlist[index].url;
+        audio.play();
+        updateIcon();
+      }
+
+      function nextTrack() {
+        currentTrack = (currentTrack + 1) % playlist.length;
+        loadTrack(currentTrack);
+      }
+
+      function updateIcon() {
+        if (audio.paused) {
+          icon.innerHTML =
+            '<i class="fa-solid fa-circle-play" style="color: #f40101;"></i>';
+        } else {
+          icon.innerHTML =
+            '<i class="fa-solid fa-circle-play fa-spin" style="color: #f40101;"></i>';
+        }
+      }
+      icon.addEventListener("click", () => {
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+        }
+        updateIcon();
+      });
+      audio.addEventListener("ended", nextTrack);
+      audio.addEventListener("play", updateIcon);
+      audio.addEventListener("pause", updateIcon);
+      window.addEventListener("DOMContentLoaded", () => {
+        loadTrack(currentTrack);
+      });
+      // Initialize Swiper
+      var swiper = new Swiper(".mySwiper", {
+        // grabCursor: true,
+        effect: "creative",
+        autoplay: {
+          delay: 5000, // 3 seconds delay between slides
+          disableOnInteraction: false,
+          waitForTransition: true, // Ensures autoplay waits for transition after manual navigation
+        },
+        loop: true,
+        speed: 1500, // Adjusts the slider transition duration (in ms)
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            translate: [0, 0, -400],
+          },
+          next: {
+            translate: ["100%", 0, 0],
+          },
+        },
+        keyboard: {
+          enabled: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      // heart snowflake effect
+      (() => {
+        const DELAY = 20000;
+        const FALL_DURATION = 20000;
+        const snowflakes = document.querySelectorAll(".snowflake");
+
+        function startSnow() {
+          snowflakes.forEach((el) => {
+            el.style.display = "none";
+          });
+          setTimeout(() => {
+            snowflakes.forEach((el) => {
+              el.style.display = "block";
+            });
+            setTimeout(startSnow, DELAY);
+          }, FALL_DURATION);
+        }
+        setTimeout(startSnow, DELAY);
+      })();
+      // Countdown Timer
+      (() => {
+        const weddingDate = new Date("2026-04-26T00:00:00").getTime();
+
+        function updateCountdown() {
+          const now = new Date().getTime();
+          const diff = weddingDate - now;
+          if (diff <= 0) return;
+          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+          const minutes = Math.floor((diff / (1000 * 60)) % 60);
+          const seconds = Math.floor((diff / 1000) % 60);
+          document.getElementById("cd-days").innerText = days;
+          document.getElementById("cd-hours").innerText = hours;
+          document.getElementById("cd-minutes").innerText = minutes;
+          document.getElementById("cd-seconds").innerText = seconds;
+        }
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+      })();
+    </script>
+    <!-- PhotoSwipe JavaScript -->
+    <!-- <script type="module">
+      import PhotoSwipeLightbox from "https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe-lightbox.esm.js";
+      import PhotoSwipe from "https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.esm.js";
+
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: "#my-gallery",
+        children: "a",
+        pswpModule: PhotoSwipe,
+        // Các tùy chọn bổ sung
+        showHideAnimationType: "zoom",
+        bgOpacity: 0.9,
+        spacing: 0.1,
+        loop: true,
+        preload: [1, 1],
+      });
+
+      lightbox.init();
+    </script> -->
+
+    <script type="module">
+      import PhotoSwipeLightbox from "https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe-lightbox.esm.js";
+      import PhotoSwipe from "https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.esm.js";
+
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: "#my-gallery",
+        children: "a",
+        pswpModule: PhotoSwipe,
+
+        // Tắt animation
+        showHideAnimationType: "fade",
+
+        bgOpacity: 0.95,
+        spacing: 0.1,
+        loop: true,
+        preload: [2, 3],
+
+        // Zoom
+        initialZoomLevel: "fit",
+        secondaryZoomLevel: 2.5,
+        maxZoomLevel: 4,
+
+        // Padding
+        paddingFn: (viewportSize) => {
+          return {
+            top: 20,
+            bottom: 20,
+            left: 20,
+            right: 20,
+          };
+        },
+      });
+
+      // Xử lý để hiển thị FULL ảnh trong lightbox
+      // ngay cả khi một số ảnh bị ẩn trên mobile
+      lightbox.on("uiRegister", function () {
+        lightbox.pswp.on("beforeOpen", () => {
+          document.body.style.overflow = "hidden";
+        });
+
+        lightbox.pswp.on("close", () => {
+          document.body.style.overflow = "";
+        });
+      });
+
+      // Fix glitch
+      lightbox.on("contentLoad", (e) => {
+        if (e.content.element) {
+          e.content.element.style.opacity = "0";
+
+          if (e.content.element.complete) {
+            setTimeout(() => {
+              e.content.element.style.opacity = "1";
+            }, 50);
+          } else {
+            e.content.element.onload = () => {
+              e.content.element.style.opacity = "1";
+            };
+          }
+        }
+      });
+
+      lightbox.init();
+    </script>
+  </body>
 </html>
