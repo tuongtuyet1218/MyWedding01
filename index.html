@@ -82,11 +82,11 @@
           <li><a href="#events">Sự kiện cưới</a></li>
           <li><a href="#gallery">Album hình cưới</a></li>
           <!-- <li><a href="#contact">Sổ lưu bút</a></li> -->
-          <li><a href="#donate">Mừng cưới</a></li>
+          <!-- <li><a href="#donate">Mừng cưới</a></li> -->
         </ul>
       </nav>
+      <!-- Swiper -->
       <div>
-        <!-- Swiper -->
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -112,7 +112,10 @@
           class="music-icon"
           style="font-size: 2em; cursor: pointer"
         >
-          <i class="fa-solid fa-circle-play fa-spin" style="color: #f40101"></i>
+          <i
+            class="fa-regular fa-circle-play fa-spin fa-lg"
+            style="color: #f21c1c"
+          ></i>
         </span>
         <p class="music-play-warning">Bấm vào đây để phát/dừng nhạc</p>
       </div>
@@ -490,25 +493,11 @@
             <div class="col col-xs-12">
               <div class="event-grids clearfix">
                 <div class="grid section-bg-img">
-                  <h3>TIỆC CƯỚI NHÀ NAM</h3>
-                  <div class="image-wrap">
-                    <img src="./assets/images/anh-messi-02.jpg" alt="" />
-                  </div>
-                  <p><strong>11:30 15/09/2024</strong></p>
-                  <p>
-                    <span>Phú Gia Xavia- </span>
-                    Đà Nẵng
-                  </p>
-                  <div class="calendar-button">
-                    <div class="atcb-initialized"></div>
-                  </div>
-                </div>
-                <div class="grid section-bg-img">
                   <h3>TIỆC CƯỚI NHÀ NỮ</h3>
                   <div class="image-wrap">
                     <img src="./assets/images/anh-messi-02.jpg" alt="" />
                   </div>
-                  <p><strong>11:30 15/09/2024</strong></p>
+                  <p><strong>17:30 18/04/2026</strong></p>
                   <p>
                     <span>Phú Gia Xavia- </span>
                     Đà Nẵng
@@ -522,21 +511,7 @@
                   <div class="image-wrap">
                     <img src="./assets/images/anh-messi-02.jpg" alt="" />
                   </div>
-                  <p><strong>11:30 15/09/2024</strong></p>
-                  <p>
-                    <span>Phú Gia Xavia- </span>
-                    Đà Nẵng
-                  </p>
-                  <div class="calendar-button">
-                    <div class="atcb-initialized"></div>
-                  </div>
-                </div>
-                <div class="grid section-bg-img">
-                  <h3>TIỆC CƯỚI NHÀ NAM</h3>
-                  <div class="image-wrap">
-                    <img src="./assets/images/anh-messi-02.jpg" alt="" />
-                  </div>
-                  <p><strong>11:30 15/09/2024</strong></p>
+                  <p><strong>11:30 26/04/2026</strong></p>
                   <p>
                     <span>Phú Gia Xavia- </span>
                     Đà Nẵng
@@ -550,7 +525,7 @@
           </div>
         </div>
       </section>
-      <section
+      <!-- <section
         class="donate-section section-padding section-bg-color"
         id="donate"
       >
@@ -624,7 +599,7 @@
           </div>
           <div class="row"></div>
         </div>
-      </section>
+      </section> -->
     </body>
     <footer class="site-footer footer-style-1">
       <div class="inner">
@@ -666,10 +641,10 @@
       function updateIcon() {
         if (audio.paused) {
           icon.innerHTML =
-            '<i class="fa-solid fa-circle-play" style="color: #f40101;"></i>';
+            '<i class="fa-regular fa-circle-pause fa-lg" style="color: #f21c1c;"></i>';
         } else {
           icon.innerHTML =
-            '<i class="fa-solid fa-circle-play fa-spin" style="color: #f40101;"></i>';
+            '<i class="fa-regular fa-circle-play fa-spin fa-lg" style="color: #f21c1c;"></i>';
         }
       }
       icon.addEventListener("click", () => {

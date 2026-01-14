@@ -8,6 +8,7 @@
 
 body {
     background: #fffbfb;
+    overflow-x: hidden;
 }
 
 h1,
@@ -29,7 +30,6 @@ header {
 }
 
 .wedding-title {
-    /* color: #494949; */
     color: #202a41;
     /* font-style: italic; */
     font-weight: unset;
@@ -414,7 +414,8 @@ caption {
 .invitation-section {
     display: block;
     padding: 120px 0;
-    background: url('./assets/images//bg.png') !important;
+    background: url('./assets/images/bg.png') !important;
+    overflow: hidden;
 }
 
 .invitation-box {
@@ -593,7 +594,7 @@ caption {
     animation-delay: 0s, 0s
 }
 
-*/ .snowflake:nth-of-type(1) {
+.snowflake:nth-of-type(1) {
     left: 10%;
     -webkit-animation-delay: 1s, 1s;
     animation-delay: 1s, 1s
@@ -631,8 +632,8 @@ caption {
 
 .snowflake:nth-of-type(7) {
     left: 70%;
-    -webkit-animation-delay: 6s, 2s;
-    animation-delay: 6s, 2s
+    -webkit-animation-delay: 0s, 0s;
+    animation-delay: 0s, 0s
 }
 
 .snowflake:nth-of-type(8) {
@@ -642,7 +643,7 @@ caption {
 }
 
 .snowflake:nth-of-type(9) {
-    left: 90%;
+    left: 100%;
     -webkit-animation-delay: 3s, 6s, 2s;
     animation-delay: 6s, 2s
 }
@@ -883,7 +884,9 @@ b, strong {
 }
 
 .footer-style-1 .couple-pic img {
-    max-width: 75%;
+    width: 350px;
+    height: 350px;
+    /* max-width: 75%; */
     border-radius: 50%;
     position: absolute;
     left: 48%;
@@ -928,7 +931,7 @@ b, strong {
 
 .music-player:hover~.music-play-warning,
 .music-player:hover .music-play-warning {
-    right: 48px;
+    right: 58px;
     opacity: 1;
     color: red;
     width: 220px;
@@ -991,7 +994,7 @@ b, strong {
 
 .event-section .event-grids .grid {
     background: #fff;
-    width: calc(25% - 20px);
+    width: calc(50% - 20px);
     float: left;
     padding: 20px;
     margin: 0 10px 30px;
@@ -1279,10 +1282,22 @@ p {
         width: 100% !important;
     }
 
+    .col-md-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .invitation-section .calendar-box {
+        padding-top: 70px;
+        padding-bottom: 271px;
+    }
+
     .invitation-section .invitation-box {
         max-width: 500px;
         margin: 50px auto;
         height: auto !important;
+
+        /* height: 720px !important; */
     }
 
     .invitation-section .invitation-box .left-vec {
@@ -1323,6 +1338,14 @@ p {
 
 /* Mobile - CHỈ HIỆN 4 ẢNH */
 @media (max-width: 767px) {
+    .wedding-title {
+        font-size: 2.2rem;
+    }
+
+    .swiper {
+        height: 550px;
+    }
+
     .wedding-navbar-list li {
         margin: 0 10px;
     }
@@ -1332,11 +1355,12 @@ p {
     }
 
     .invitation-section {
-        padding: 80px 0;
+        padding: 40px 0;
     }
 
     .invitation-section .invitation-box.left {
         margin-top: 0;
+        padding-bottom: 186px;
     }
 
     .invitation-section .invitation-box {
@@ -1372,6 +1396,7 @@ p {
 
     .invitation-section .invitation-box.calendar-box {
         margin: 0 auto;
+        padding-bottom: 76px;
     }
 
     .invitation-section .invitation-box {
@@ -1409,7 +1434,8 @@ p {
     }
 
     .footer-style-1 {
-        height: 50vh;
+        height: 600px;
+        min-height: auto;
     }
 
     .footer-style-1 h2 {
@@ -1418,12 +1444,17 @@ p {
         margin: 0;
     }
 
+    .footer-style-1 .couple-pic img {
+        width: 210px;
+        height: 210px;
+    }
+
     .music-player {
-        bottom: 60px;
+        bottom: 20px;
     }
 
     .event-section {
-        padding-bottom: 60px;
+        padding-bottom: 20px;
     }
 
     .event-section .top-area {
@@ -1495,6 +1526,18 @@ p {
         font-size: 2rem;
     }
 }
+
+@media (max-width: 578px) {
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .invitation-section .invitation-box {
+        padding-bottom: 30px !important;
+    }
+}
+
 
 /* Mobile nhỏ */
 @media (max-width: 480px) {
