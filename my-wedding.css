@@ -55,8 +55,7 @@ header {
 }
 
 .wedding-title-icon {
-    color: #ffcaee;
-    /* color: #c89d9c;; */
+    color: #f14456;
 }
 
 .wedding-subtitle::after {
@@ -648,8 +647,29 @@ caption {
     animation-delay: 6s, 2s
 }
 
+.see-location-btn {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 21px 8px;
+    border: 2px solid #c89d9c;
+    color: #818492;
+    border-radius: 60px;
+    display: block;
+    text-decoration: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
 
-
+.see-location-btn:hover {
+    background-color: #c89d9c;
+    color: #fff;
+}
+a:hover {
+    text-decoration: none;
+}
 /* album */
 .gallery-section {
     padding-bottom: 105px;
@@ -1008,7 +1028,85 @@ b, strong {
 }
 
 .section-bg-color-2 {
-    background: #ebf1f7;
+    background: #F2EDED;
+}
+
+
+
+.wedding-date span {
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    font-size: 1.2rem;
+    display: inline-block;
+    position: relative;
+    letter-spacing: 2px;
+    text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
+}
+
+
+.slide-main-text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+
+.slide-title h2 span{
+    font-family: "Dancing Script", cursive;
+    font-size: 5.33333rem;
+    color: #fff;
+    margin: 0.3em 0 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+.slide-title h2 i{
+    font-size: 40px;
+}
+
+.wedding-date span {
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    font-size: 1.2rem;
+    display: inline-block;
+    position: relative;
+    letter-spacing: 2px;
+    text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
+    font-family: "Dancing Script", cursive;
+
+}
+.wedding-date span:before, .hero-style-4 .wedding-date span:before, .static-hero .wedding-date span:before, .static-hero-s2 .wedding-date span:before, .static-hero-s3 .wedding-date span:before, .static-hero-s4 .wedding-date span:before {
+    content: "";
+    background: #fff;
+    width: 35px;
+    height: 1px;
+    position: absolute;
+    left: -50px;
+    top: 9px;
+}
+
+.wedding-date span:after, .hero-style-4 .wedding-date span:after, .static-hero .wedding-date span:after, .static-hero-s2 .wedding-date span:after, .static-hero-s3 .wedding-date span:after, .static-hero-s4 .wedding-date span:after {
+    content: "";
+    background: #fff;
+    width: 35px;
+    height: 1px;
+    position: absolute;
+    right: -50px;
+    top: 9px;
 }
 
 .event-section .event-grids h3 {
@@ -1295,10 +1393,16 @@ p {
     .invitation-section .invitation-box {
         max-width: 500px;
         margin: 50px auto;
-        height: auto !important;
+        /* height: auto !important; */
 
-        /* height: 720px !important; */
+        height: 720px !important;
     }
+    .slide-title h2 span{
+    font-size: 3.33333rem;
+}
+    .slide-title h2 i{
+    font-size: 25px;
+}
 
     .invitation-section .invitation-box .left-vec {
         width: 150px;
@@ -1361,13 +1465,23 @@ p {
     .invitation-section .invitation-box.left {
         margin-top: 0;
         padding-bottom: 186px;
+        width: 300px !important;
+        height: 380px !important;
     }
 
     .invitation-section .invitation-box {
         max-width: 300px;
         padding: 46px 40px;
         margin: 50px auto;
+        height: auto !important;
     }
+
+    .slide-title h2 span{
+    font-size: 2rem;
+}
+    .slide-title h2 i{
+    font-size: 20px;
+}
 
     .invitation-section .invitation-box:before {
         width: calc(100% - 40px);
