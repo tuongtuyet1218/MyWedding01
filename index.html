@@ -43,10 +43,10 @@
 
     <link rel="stylesheet" href="my-wedding.css" />
   </head>
-  <!-- <body oncontextmenu="return false" onkeydown="if(event.keyCode==123||(event.ctrlKey&&event.shiftKey&&event.keyCode==73)){return false;}"> -->
+  <body oncontextmenu="return false" onkeydown="if(event.keyCode==123||(event.ctrlKey&&event.shiftKey&&event.keyCode==73)){return false;}">
 
   <body>
-    <!-- <script>
+    <script>
         // Disable right-click and some common inspect shortcuts
         document.addEventListener('contextmenu', event => event.preventDefault());
         document.addEventListener('keydown', event => {
@@ -60,7 +60,7 @@
                 event.preventDefault();
             }
         });
-    </script> -->
+    </script>
     <header>
       <span class="wedding-header">
         <h1 class="wedding-title">
@@ -83,23 +83,7 @@
       </nav>
       <!-- Swiper -->
       <div>
-        <div class="swiper mySwiper">
-          <div class="slide-main-text">
-            <div class="container">
-              <div class="slide-title">
-                <h2>
-                  <span>Văn Tưởng</span>
-                  <i
-                    class="fa-regular fa-heart fa-2xs wedding-title-icon"
-                  ></i>
-                  <span>Diễm Tuyết</span>
-                </h2>
-              </div>
-              <div class="wedding-date">
-                <span> 26 tháng 4 2026 </span>
-              </div>
-            </div>
-          </div>
+        <div class="swiper mySwiper" style="position: relative">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="./assets/images/anh-messi-01.jpg" alt="" />
@@ -113,8 +97,22 @@
             <div class="swiper-slide">
               <img src="./assets/images/anh-messi-04.webp" alt="" />
             </div>
-            <div class="swiper-pagination"></div>
           </div>
+          <div class="slide-main-text">
+            <div class="container">
+              <div class="slide-title">
+                <h2>
+                  <span>Văn Tưởng</span>
+                  <i class="fa-regular fa-heart fa-2xs wedding-title-icon"></i>
+                  <span>Diễm Tuyết</span>
+                </h2>
+              </div>
+              <div class="wedding-date">
+                <span> 26 tháng 4 2026 </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
       <div class="music-player">
@@ -283,8 +281,7 @@
               <div class="section-title">
                 <h2>Album hình cưới</h2>
                 <p>
-                  Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi
-                  yêu ai đó sâu sắc sẽ cho bạn dũng khí.
+                  Tình yêu là ngôn ngữ của trái tim, nó không cần lời nói.
                 </p>
               </div>
             </div>
@@ -433,8 +430,8 @@
         >
           <h2>Sự Kiện Cưới</h2>
           <p>
-            ...tình yêu không phải là chỉ nhìn vào mắt nhau, mà là cùng hướng về
-            một tương lai chung...
+            ...Yêu và được yêu là cảm giác như được trải qua ánh sáng từ cả hai
+            phía...
           </p>
         </div>
 
