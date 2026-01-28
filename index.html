@@ -11,7 +11,7 @@
     <!-- Open Graph for social sharing -->
     <meta property="og:title" content="Our wedding Tuong & Tuyet" />
     <meta property="og:description" content="Lời mời dự đám cưới Văn Tưởng & Diễm Tuyết - 26/04/2026" />
-    <meta property="og:image" content="https://tuongtuyet1218.github.io/MyWedding/assets/images/anh-messi-01.jpg" />
+    <meta property="og:image" content="https://tuongtuyet1218.github.io/MyWedding/assets/images/invitation-main.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tuongtuyet1218.github.io/MyWedding/" />
     <!-- font -->
@@ -79,8 +79,6 @@
         <span class="wedding-subtitle">Just Married</span>
       </span>
     </header>
-
-    <body>
       <nav class="wedding-navbar">
         <ul class="wedding-navbar-list">
           <li><a href="#events">Sự kiện cưới</a></li>
@@ -280,6 +278,7 @@
           </div>
         </div>
       </section>
+
       <section class="gallery-section section-padding" id="gallery">
         <div class="container">
           <div class="row">
@@ -421,6 +420,10 @@
               </a>
             </div>
           </div>
+          <button class="see-album-btn" onclick="document.querySelector('#my-gallery a').click();">
+            <i class="fa-regular fa-images"></i>
+            Tất cả hình
+          </button>
         </div>
       </section>
       <section
@@ -451,8 +454,8 @@
                     <img src="./assets/images/anh-messi-02.jpg" alt="" />
                   </div>
                   <p><strong>17:30 18/04/2026</strong></p>
-                  <p>
-                    <span>Phú Gia Xavia- </span>
+                  <p class="restaurant-name">
+                    <span >Phú Gia Xavia -</span>
                     Đà Nẵng
                   </p>
                   <div class="calendar-button">
@@ -472,15 +475,15 @@
                     <img src="./assets/images/anh-messi-02.jpg" alt="" />
                   </div>
                   <p><strong>11:30 26/04/2026</strong></p>
-                  <p>
-                    <span>Phú Gia Xavia- </span>
+                  <p class="restaurant-name">
+                    <span>Hương Cau -</span>
                     Đà Nẵng
                   </p>
                   <div class="calendar-button">
                     <div class="atcb-initialized">
                       <a
                         class="see-location-btn"
-                        href="https://www.google.com/maps/place/Ph%C3%BA+Gia+Xavia+Restaurant/@16.0430496,108.2234035,18.74z/data=!4m6!3m5!1s0x31421944f53b4955:0x39233d7e59760bd1!8m2!3d16.0426043!4d108.2244288!16s%2Fg%2F11srbpvzhy?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"
+                        href="https://www.google.com/maps/place/Trung+t%C3%A2m+H%E1%BB%99i+ngh%E1%BB%8B+Ti%E1%BB%87c+c%C6%B0%E1%BB%9Bi+New+H%C6%B0%C6%A1ng+Cau+Palace/@16.045684,108.2225613,20.5z/data=!4m14!1m7!3m6!1s0x314219e16d3b1bc3:0x8f0a5874a8733a47!2zVHJ1bmcgdMOibSBI4buZaSBuZ2jhu4sgVGnhu4djIGPGsOG7m2kgTmV3IEjGsMahbmcgQ2F1IFBhbGFjZQ!8m2!3d16.045858!4d108.2225595!16s%2Fg%2F11whwbynfs!3m5!1s0x314219e16d3b1bc3:0x8f0a5874a8733a47!8m2!3d16.045858!4d108.2225595!16s%2Fg%2F11whwbynfs?entry=ttu&g_ep=EgoyMDI2MDEyNi4wIKXMDSoASAFQAw%3D%3D"
                         target="_blank"
                         >Xem bản đồ</a
                       >
@@ -496,7 +499,7 @@
     <footer class="site-footer footer-style-1">
       <div class="inner">
         <div class="couple-pic">
-          <img src="./assets/images/anh-messi-04.webp" alt="" />
+          <img src="./assets/images/anh-messi-02.jpg" alt="" />
         </div>
         <h2>Thank you!</h2>
       </div>
@@ -625,25 +628,6 @@
         setInterval(updateCountdown, 1000);
       })();
     </script>
-    <!-- PhotoSwipe JavaScript -->
-    <!-- <script type="module">
-      import PhotoSwipeLightbox from "https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe-lightbox.esm.js";
-      import PhotoSwipe from "https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe.esm.js";
-
-      const lightbox = new PhotoSwipeLightbox({
-        gallery: "#my-gallery",
-        children: "a",
-        pswpModule: PhotoSwipe,
-        // Các tùy chọn bổ sung
-        showHideAnimationType: "zoom",
-        bgOpacity: 0.9,
-        spacing: 0.1,
-        loop: true,
-        preload: [1, 1],
-      });
-
-      lightbox.init();
-    </script> -->
 
     <script type="module">
       import PhotoSwipeLightbox from "https://cdn.jsdelivr.net/npm/photoswipe@5.4.3/dist/photoswipe-lightbox.esm.js";

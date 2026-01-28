@@ -31,11 +31,10 @@ header {
 
 .wedding-title {
   color: #202a41;
-  /* font-style: italic; */
   font-weight: unset;
   text-align: center;
   margin: 22px 0 8px 0;
-  font-family: "Great Vibes", cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 2.5rem;
 }
 
@@ -44,7 +43,6 @@ header {
   font-weight: 400;
   font-style: italic;
   text-align: center;
-  /* color: #8f8a8d; */
   color: #797979;
   font-size: 14px;
   display: flex;
@@ -54,6 +52,9 @@ header {
   position: relative;
 }
 
+.restaurant-name {
+  font-weight: 700;
+}
 .wedding-title-icon {
   color: #f14456;
 }
@@ -65,13 +66,6 @@ header {
   height: 1px;
   background: #ece9e9;
   margin-left: 14px;
-  /* content: "";
-    background: #ece9e9;
-    width: 35px;
-    height: 1px;
-    position: absolute;
-    right: -50px;
-    top: 9px; */
 }
 
 .wedding-subtitle::before {
@@ -187,7 +181,6 @@ header {
   font-size: 14px;
 }
 
-/* filepath: /Users/tuong/Workspace/my-wedding/my-wedding.css */
 .save-the-date-section {
   display: flex;
   justify-content: center;
@@ -440,8 +433,7 @@ caption {
 }
 
 .left-vec {
-  background: url("./assets/images/invitation-left-img.png") center center /
-    cover no-repeat local;
+  background: url("./assets/images/invitation-left-img.png") center center / cover no-repeat local;
   width: 220px;
   height: 414px;
   position: absolute;
@@ -455,8 +447,7 @@ caption {
 }
 
 .right-vec {
-  background: url("./assets/images/invitation-right-image.png") center center /
-    cover no-repeat local;
+  background: url("./assets/images/invitation-right-image.png") center center / cover no-repeat local;
   width: 400px;
   height: 508px;
   position: absolute;
@@ -667,16 +658,52 @@ caption {
   background-color: #c89d9c;
   color: #fff;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 /* album */
 .gallery-section {
   padding-bottom: 105px;
 }
 
 .section-padding {
-  padding: 120px 0;
+  padding: 90px 0;
+}
+
+.see-album-btn {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "gf_Roboto variant1", Tofu;
+  padding: 10px 36px 8px;
+  border: 2px solid #c89d9c;
+  color: #818492;
+  border-radius: 60px;
+  display: block;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.see-album-btn:hover {
+  background-color: #c89d9c;
+  color: #fff;
+}
+
+.see-album-btn i {
+  margin-right: 4px;
+}
+
+.see-album-btn:focus,
+.see-album-btn:active {
+  outline: none;
+  box-shadow: none;
 }
 
 .section-title {
@@ -688,8 +715,7 @@ a:hover {
 
 .section-title:before {
   content: "";
-  background: url("./assets/images/sec-title-flower.png") center center / cover
-    no-repeat local;
+  background: url("./assets/images/sec-title-flower.png") center center / cover no-repeat local;
   width: 126px;
   height: 59px;
   position: absolute;
@@ -759,8 +785,7 @@ a:hover {
 
 .section-title:before {
   content: "";
-  background: url("./assets/images/sec-title-flower.png") center center / cover
-    no-repeat local;
+  background: url("./assets/images/sec-title-flower.png") center center / cover no-repeat local;
   width: 126px;
   height: 59px;
   position: absolute;
@@ -797,7 +822,7 @@ a:hover {
 }
 
 .section-title h2 {
-  font-family: "dancing_scriptregular", cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 36px;
   font-weight: 600;
   margin: 0 0 0.39em;
@@ -879,8 +904,7 @@ strong {
 /* footer */
 
 .footer-style-1 {
-  background: url("./assets/images/footer-shape.png") center bottom / 100%
-    no-repeat local;
+  background: url("./assets/images/footer-shape.png") center bottom / 100% no-repeat local;
   text-align: center;
   height: 100vh;
   min-height: 900px;
@@ -899,8 +923,7 @@ strong {
 }
 
 .footer-style-1 .couple-pic {
-  background: url("./assets/images/footer-couple-pic-frame.png") center center /
-    cover no-repeat local;
+  background: url("./assets/images/footer-couple-pic-frame.png") center center / cover no-repeat local;
   width: 511px;
   height: 470px;
   margin: 0 auto;
@@ -923,7 +946,7 @@ strong {
 }
 
 .footer-style-1 h2 {
-  font-family: "dancing_scriptregular", cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 72px;
   font-size: 4.8rem;
   line-height: 1.8em;
@@ -953,7 +976,7 @@ strong {
   visibility: hidden;
 }
 
-.music-player:hover ~ .music-play-warning,
+.music-player:hover~.music-play-warning,
 .music-player:hover .music-play-warning {
   right: 58px;
   opacity: 1;
@@ -982,8 +1005,7 @@ strong {
 }
 
 .event-section .top-area {
-  background: url("./assets/images/bg-event.png") center center / cover
-    no-repeat local;
+  background: url("./assets/images/bg-event.png") center center / cover no-repeat local;
   text-align: center;
   width: 100%;
   height: 60%;
@@ -1065,11 +1087,13 @@ strong {
   z-index: 2;
   pointer-events: none;
 }
+
 .swiper .slide-main-text .container {
   text-align: center;
   padding: 24px 32px;
   display: inline-block;
 }
+
 .swiper .slide-title h2 span {
   font-weight: 400;
 
@@ -1079,10 +1103,12 @@ strong {
   margin: 0.3em 0 0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
+
 .swiper .slide-title h2 i {
   font-size: 40px;
   margin: 0 10px;
 }
+
 .swiper .wedding-date span {
   color: #fff;
   font-weight: 300;
@@ -1092,6 +1118,7 @@ strong {
   text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
   font-family: "Great Vibes", cursive;
 }
+
 .wedding-date span:before,
 .hero-style-4 .wedding-date span:before,
 .static-hero .wedding-date span:before,
@@ -1328,11 +1355,9 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.3) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.3) 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 1;
@@ -1415,9 +1440,11 @@ p {
 
     height: 720px !important;
   }
+
   .swiper .slide-title h2 span {
     font-size: 3.33333rem;
   }
+
   .swiper .slide-title h2 i {
     font-size: 25px;
   }
@@ -1497,6 +1524,7 @@ p {
   .swiper .slide-title h2 span {
     font-size: 2rem;
   }
+
   .swiper .slide-title h2 i {
     font-size: 20px;
   }
@@ -1514,7 +1542,7 @@ p {
     font-size: 1.86667rem;
   }
 
-  .invitation-section .invitation-box h2 + span {
+  .invitation-section .invitation-box h2+span {
     font-size: 0.93333rem;
   }
 
@@ -1569,7 +1597,7 @@ p {
   }
 
   .footer-style-1 h2 {
-    font-family: "dancing_scriptregular", cursive;
+    font-family: "Dancing Script", cursive;
     font-size: 1.8rem;
     margin: 0;
   }
